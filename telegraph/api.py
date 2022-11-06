@@ -82,8 +82,8 @@ class Telegraph:
 
     __slots__ = ('_telegraph',)
 
-    def __init__(self, access_token=None, domain='telegra.ph'):
-        self._telegraph = TelegraphApi(access_token, domain)
+    def __init__(self, access_token=None):
+        self._telegraph = TelegraphApi(access_token)
 
     def get_access_token(self):
         """Get current access_token"""
